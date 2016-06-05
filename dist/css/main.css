@@ -1,6 +1,5 @@
 @charset "UTF-8";
 html, body {
-  background: blue;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.55; }
@@ -14,24 +13,20 @@ h1 {
 
 /* typography */
 /*DENTRO DEL DIV GRANDE LA TIPO CAMBIA*/
-.pcss3t .typography h1 {
-  font-size: 10px;
-  line-height: 60px;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-  color: blue; }
-
 .pcss3t .typography h3 {
   font-size: 26px;
-  line-height: 38px; }
+  line-height: 38px;
+  color: #ff6633; }
 
 .pcss3t .typography h4 {
   font-size: 20px;
-  line-height: 32px; }
+  line-height: 32px;
+  color: #ff6633; }
 
 /*LINK INSIDE DIV CONTAINER*/
 .pcss3t .typography a {
   text-decoration: underline;
-  color: green; }
+  color: #ff6633; }
 
 .pcss3t .typography a:hover {
   text-decoration: none; }
@@ -40,18 +35,15 @@ h1 {
   position: relative;
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 20px 40px;
-  border: 10px cyan solid; }
+  padding: 0 20px 40px; }
 
 /* MAIN STYLES */
 .pcss3t {
   margin: 0;
   padding: 0;
-  border: 10px red solid;
   outline: none;
   font-size: 0;
-  text-align: left;
-  background-color: yellow; }
+  text-align: left; }
 
 /* HIDE RADIO */
 .pcss3t > input {
@@ -94,6 +86,7 @@ h1 {
 .pcss3t > .tab-content-4:checked ~ ul .tab-content-4,
 .pcss3t > .tab-content-5:checked ~ ul .tab-content-5,
 .pcss3t > .tab-content-6:checked ~ ul .tab-content-6,
+.pcss3t > .tab-content-7:checked ~ ul .tab-content-7,
 .pcss3t > .tab-content-last:checked ~ ul .tab-content-last {
   z-index: 1;
   left: 0;
@@ -107,6 +100,7 @@ h1 {
 .pcss3t-height-auto > .tab-content-4:checked ~ ul .tab-content-4,
 .pcss3t-height-auto > .tab-content-5:checked ~ ul .tab-content-5,
 .pcss3t-height-auto > .tab-content-6:checked ~ ul .tab-content-6,
+.pcss3t-height-auto > .tab-content-6:checked ~ ul .tab-content-7,
 .pcss3t-height-auto > .tab-content-last:checked ~ ul .tab-content-last {
   display: block; }
 
@@ -120,19 +114,19 @@ h1 {
 /* THEMES */
 .pcss3t > label {
   padding: 0 20px;
-  border: 10px orange solid;
-  /*background: orange;*/
+  border: 5px white solid;
   font-size: 13px;
-  line-height: 49px; }
+  line-height: 49px;
+  list-type: none; }
 
 .pcss3t > label:hover {
-  background: pink; }
+  background: #ed497e; }
 
 .pcss3t > input:checked + label {
-  background: pink; }
+  background: #ed497e; }
 
 .pcss3t > ul {
-  background: cyan;
+  border: 10px #0097e8 solid;
   text-align: left; }
 
 /*ESTILOS DE TAG colores*/
@@ -145,9 +139,10 @@ h1 {
 .pcss3t-theme-7 > label {
   margin: 0 5px 5px 0;
   border-radius: 5px;
-  background: #fff;
+  background: #0097e8;
   box-shadow: 0 2px rgba(0, 0, 0, 0.2);
-  color: #808080;
+  color: white;
+  box-shadow: #B9B7B7 0px 3px 3px;
   opacity: 0.8; }
 
 .pcss3t-theme-1 > label:hover,
@@ -157,7 +152,7 @@ h1 {
 .pcss3t-theme-5 > label:hover,
 .pcss3t-theme-6 > label:hover,
 .pcss3t-theme-7 > label:hover {
-  background: #fff;
+  background: #ed497e;
   opacity: 1; }
 
 .pcss3t-theme-1 > input:checked + label,
@@ -171,7 +166,7 @@ h1 {
   padding-bottom: 5px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  color: red;
+  color: white;
   opacity: 1; }
 
 .pcss3t-theme-1 > ul,
@@ -228,7 +223,7 @@ h1 {
   /*overflow: hidden;*/
   outline: none;
   font-size: 1rem;
-  color: blue; }
+  color: #808080; }
 
 /*.two-columns {
     -webkit-column-count: 2;

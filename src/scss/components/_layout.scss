@@ -3,7 +3,6 @@
     max-width: 980px;
     margin: 0 auto;
     padding: 0 20px 40px;
-    border: 10px cyan solid;
 }
 
 
@@ -13,11 +12,9 @@
 .pcss3t {
     margin: 0;
     padding: 0;
-    border: 10px red solid;
     outline: none;
     font-size: 0;
     text-align: left;
-    background-color: yellow;
 }
 
 /* HIDE RADIO */
@@ -68,6 +65,7 @@
 .pcss3t > .tab-content-4:checked ~ ul .tab-content-4,
 .pcss3t > .tab-content-5:checked ~ ul .tab-content-5,
 .pcss3t > .tab-content-6:checked ~ ul .tab-content-6,
+.pcss3t > .tab-content-7:checked ~ ul .tab-content-7,
 .pcss3t > .tab-content-last:checked ~ ul .tab-content-last {
     z-index: 1;
     left: 0;
@@ -82,6 +80,7 @@
 .pcss3t-height-auto > .tab-content-4:checked ~ ul .tab-content-4,
 .pcss3t-height-auto > .tab-content-5:checked ~ ul .tab-content-5,
 .pcss3t-height-auto > .tab-content-6:checked ~ ul .tab-content-6,
+.pcss3t-height-auto > .tab-content-6:checked ~ ul .tab-content-7,
 .pcss3t-height-auto > .tab-content-last:checked ~ ul .tab-content-last {
     display: block;
 }
@@ -104,19 +103,19 @@
 
 .pcss3t > label {   
     padding: 0 20px;
-    border: 10px orange solid;
-    /*background: orange;*/
+    border: 5px white solid;
     font-size: 13px;
     line-height: 49px;
+    list-type: none;
 }
 .pcss3t > label:hover {
-    background: pink;
+    background: $btn-bg-hover;
 }
 .pcss3t > input:checked + label {
-    background: pink;
+    background: $btn-bg-hover;
 }
 .pcss3t > ul {
-    background: cyan;
+    border: 10px $btn-bg solid;
     text-align: left;
 }
 
@@ -130,9 +129,10 @@
 .pcss3t-theme-7 > label {
     margin: 0 5px 5px 0;
     border-radius: 5px;
-    background: #fff;
+    background: $btn-bg;
     box-shadow: 0 2px rgba(0,0,0,0.2);
-    color: #808080;
+    color: white;
+    box-shadow:$btn-shadow 0px 3px 3px;
     opacity: 0.8;
 }
 .pcss3t-theme-1 > label:hover,
@@ -142,7 +142,7 @@
 .pcss3t-theme-5 > label:hover,
 .pcss3t-theme-6 > label:hover,
 .pcss3t-theme-7 > label:hover {
-    background: #fff;
+    background: $btn-bg-hover;
     opacity: 1;
 }
 .pcss3t-theme-1 > input:checked + label,
@@ -156,7 +156,7 @@
     padding-bottom: 5px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    color: red;
+    color: white;
     opacity: 1;
 }
 .pcss3t-theme-1 > ul,
@@ -219,7 +219,7 @@
     /*overflow: hidden;*/
     outline: none;
     font-size: 1rem;
-    color:blue;
+    color:$text;
 }
 
     /*.two-columns {
