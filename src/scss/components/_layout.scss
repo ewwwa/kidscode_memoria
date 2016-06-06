@@ -5,7 +5,6 @@
     padding: 0 20px 40px;
 }
 
-
 /* MAIN STYLES */
 
 
@@ -23,7 +22,6 @@
 }
 
 /* CARACTERÍSTIQUES LABEL */
-
 .pcss3t > label {
     position: relative;
     display: inline-block;  
@@ -43,7 +41,6 @@
     /*border: 0;*/
     outline: none;
     font-size: 1rem;
-
 }
 
 .pcss3t > ul > li {
@@ -133,7 +130,6 @@
     box-shadow: 0 2px rgba(0,0,0,0.2);
     color: white;
     box-shadow:$btn-shadow 0px 3px 3px;
-    opacity: 0.8;
 }
 .pcss3t-theme-1 > label:hover,
 .pcss3t-theme-2 > label:hover,
@@ -210,17 +206,18 @@
     .pcss3t-theme-6 > .tab-content-first:checked ~ ul,
     .pcss3t-theme-7 > .tab-content-first:checked ~ ul {
         border-top-left-radius: 5px;
-    }}
+    }
+    }
 
     .pcss3t > ul {
         list-style: none;
         position: relative;
         display: block;
-    /*overflow: hidden;*/
-    outline: none;
-    font-size: 1rem;
-    color:$text;
-}
+        overflow: hidden;
+        outline: none;
+        font-size: 1rem;
+        color:$text;
+    }
 
     /*.two-columns {
     -webkit-column-count: 2;
