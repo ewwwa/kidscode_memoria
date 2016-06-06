@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/general.js"></script>
+    <!--<script src="js/slider.js"></script>-->
+
 </head>
 <body>
 
@@ -15,24 +18,24 @@
 
         <!-- tabs -->
         <div class="pcss3t pcss3t-theme-1">
-            <input type="radio" name="pcss3t" checked  id="tab1" class="tab-content-first">
+            <input type="radio" name="pcss3t" checked  id="tab1" class="tab-content-first" onclick="javascript:jumpScroll(); ">
             <label for="tab1">Resumen</label>
 
-            <input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
+            <input type="radio" name="pcss3t" id="tab2" class="tab-content-2" onclick="javascript:jumpScroll(); ">
             <label for="tab2">Introducción</label>
 
-            <input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
+            <input type="radio" name="pcss3t" id="tab3" class="tab-content-3" onclick="javascript:jumpScroll(); ">
             <label for="tab3">Objetivos</label>
 
-            <input type="radio" name="pcss3t" id="tab4" class="tab-content-4">
+            <input type="radio" name="pcss3t" id="tab4" class="tab-content-4" onclick="javascript:jumpScroll(); ">
             <label for="tab4">Metodología</label>
-            <input type="radio" name="pcss3t" id="tab5" class="tab-content-5">
+            <input type="radio" name="pcss3t" id="tab5" class="tab-content-5" onclick="javascript:jumpScroll(); ">
             <label for="tab5">Desarrollo</label>
-            <input type="radio" name="pcss3t" id="tab6" class="tab-content-6">
+            <input type="radio" name="pcss3t" id="tab6" class="tab-content-6" onclick="javascript:jumpScroll(); ">
             <label for="tab6">Análisis</label>
-            <input type="radio" name="pcss3t" id="tab7" class="tab-content-7">
+            <input type="radio" name="pcss3t" id="tab7" class="tab-content-7" onclick="javascript:jumpScroll(); ">
             <label for="tab7">Bibliografía</label>
-            <input type="radio" name="pcss3t" id="tab8" class="tab-content-last">
+            <input type="radio" name="pcss3t" id="tab8" class="tab-content-last" onclick="javascript:jumpScroll(); ">
             <label for="tab8">Anexo</label>
             <ul>
                 <li class="tab-content tab-content-first typography">
@@ -51,8 +54,6 @@
                     <p>El objetivo es que los niños sean capaces de llevar a cabo y realizar sus propios proyectos, experimentar y aprender a programar.</p>
                     <p>La família acompaña durante este proceso. Queremos que tengan un rol activo y que colaboren a la hora de enseñar este nuevo lenguaje a sus hijos.</p>
                 </li>
-                <!--<p class="text-right"><em>Find out more about Leonardo da Vinci from <a href="http://en.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank">Wikipedia</a>.</em></p>-->
-
 
                 <li class="tab-content tab-content-3 typography">
                     <h3>Objetivos</h3>
@@ -87,7 +88,7 @@
                     <p>Tras finalizar el proceso de rotación de grupos en la asignatura de Design Thinking el objetivo de esta Release era la de plantear un punto de partida más definido.</p>
                     <h4>Objetivos específicos: Frontend</h4>
                     <ul>
-                        <li><strong>Definiendo el estilo visual:</strong> queríamos un estilo visual inspirado en el Flat Design tan utilizado en las webs 2.0. Esta decisión fue tomada tras componer las primeras partes de nuestro “Mood Board” hecho en la plataforma de <a href="http://www.pinterest.com/proyectokidscod" target="_blank"><em>Pinterest</a>.</em></li>
+                        <li><strong>Definiendo el estilo visual:</strong> queríamos un estilo visual inspirado en el Flat Design tan utilizado en las webs 2.0. Esta decisión fue tomada tras componer las primeras partes de nuestro “Mood Board” hecho en la plataforma de <a href="http://www.pinterest.com/proyectokidscod" target="_blank">Pinterest</a></li>
                         <li><strong>Definiendo la temática de nuestro proyecto:</strong> aquí decidimos que nuestro juego trataba de crear y compartir recursos. La idea era que nuestra plataforma contase con una comunidad donde se pudiesen compartir las creaciones (personajes, piezas, interacciones). El juego consistiría en crear monstruos, animarlos y luego compartir con la comunidad las creaciones y retroalimentarse de otros niños del mundo.</li>
                         <li><strong>Estableciendo el valor añadido:</strong> para enseñar la lógica de la programación decidimos que la mejor metodología era la del <strong>puzzle tradicional</strong>. Juntando diferentes piezas, como si de comandos de programación se tratase, para poder interactuar con el personaje, enseñando así la lógica de programación sin que el niño sepa que lo está aprendiendo.</li>
                         <li><strong>Concepto de “Sandbox”: </strong>Una de las cosas que más nos preocupaba era la seguridad y privacidad de los niños. Introducimos este concepto, como la caja de arena donde los niños pueden jugar y experimentar libremente de forma segura. Establecimos la idea de que hubiesen controles por parte del sistema, como avisos a los padres vía email de la actividad de sus hijos; identificarlos por medio de alias, nunca con datos reales; y proteger la imagen de los mismos con avatares. La mensajería quedaba descartada. Para interactuar con otros usuarios establecimos un sistema de bonificaciones entre usuarios vía likes, favoritos, ratings y compartiendo recursos con mensajes autogenerados.</li>
@@ -130,37 +131,88 @@
                 <ul>
                     <li><strong>Historias de usuario padres:</strong> Incluimos a los padres en las historias de usuario porque empezamos a darle forma a la landing page. En este punto queríamos desarrollar más la información y generar conversión. Los padres querían entender el juego, acceder rápidamente, ver el juego para probarlo y leer opiniones de otros usuarios para ver si les convence.</li>
                     <li><strong>Historias de usuario niños:</strong> Los niños en esta Release querían un juego nuevo, más animaciones y poder elegir qué aventura jugar.</li>
-                    <li><strong>A/B Testing 1:</strong> Debido a que surgieron varias hipótesis sobre cómo solventar estas historias de usuario, procedimos a hacer un A/B Testing, en los cuales el test A presentaba un diseño más sobrio, más adulto y más técnico. El test B contaba con un tono más espontáneo y con más imágenes de Rumble, explicando en primera persona el proceso del juego. Recibimos varios feedback <a href="#tab6" target="_blank"><em>Anexo</a>.</em></li>
+                    <li><strong>A/B Testing 1:</strong> Debido a que surgieron varias hipótesis sobre cómo solventar estas historias de usuario, procedimos a hacer un A/B Testing, en los cuales el test A presentaba un diseño más sobrio, más adulto y más técnico. El test B contaba con un tono más espontáneo y con más imágenes de Rumble, explicando en primera persona el proceso del juego. Recibimos varios feedback <a href="#tab6" target="_blank">Anexo</a></li>
                     <li><strong>A/B Testing 2:</strong> Tras recibir feedback de los padres procedimos a juntar lo mejor de cada propuesta en un nuevo prototipo y volver a testearlo. El feedback fue bastante bueno y lo implementamos ya en el diseño de la Landing Page.</li>
                     <li><strong>Iteración claim:</strong> Testeamos añadir la palabra "en família", cosa que los usuarios recibieron de un modo positivo y decidimos dejarlo en nuestro claim.</li>
                     <li><strong>Mejorando un poco más en el agile:</strong> En esta release mejoramos nuestro trabajo en equipo cambiando roles, el equipo de diseño ayudó a desarrollo porque había sobrecarga de trabajo.</li>
                 </ul>                
             </li>
             <li class="tab-content tab-content-5 typography">
-                <h3>5</h3>
-                <p>German-born theoretical physicist </p>
-                <p class="text-right"><em>Find out more about Albert Einstein from <a href="http://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Wikipedia</a>.</em></p>               
+                <h3>Materiales creados</h3>
+                <ul>
+                    <li><a href="" target="_blank">DRIVE: investigación / presentaciones / balsamiqs / entrevistas - insights / sketch</a>.</li>
+                    <li><a href="http://silviajboo.github.io/kidscode/" target="_blank">Landing page</a></li>
+                    <li><a href="http://pacogarciapoza.github.io/kidscode_webapp/" target="_blank">Web-app</a></li>
+                    <li><a href="http://pacogarciapoza.github.io/" target="_blank">Guía de estilos</a></li>
+                </ul>             
             </li>
             <li class="tab-content tab-content-6 typography">
-                <h3>6</h3>
-                <p>German-born theoretical physicist </p>
-                <p class="text-right"><em>Find out more about Albert Einstein from <a href="http://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Wikipedia</a>.</em>           
+                <h3>Modelo de negocio</h3>
+                <p>Modelo de negocio (competencia, qué aportamos) Sistema de promoción</p>          
             </li>
-                <li class="tab-content tab-content-7 typography">
-                <h3>7</h3>
-                <p>German-born theoretical physicist </p>
-                <p class="text-right"><em>Find out more about Albert Einstein from <a href="http://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Wikipedia</a>.</em>           
+
+            <li class="tab-content tab-content-7 typography">
+                <h3>Consultas</h3>
+                <p>User experience: niños</p>
+                <ul>
+                    <li><a href="http://www.nosolousabilidad.com/articulos/diseno_orientado_ninos.htm#nielsen" target="_blank">Diseño web orientado a niños</a></li>
+                    <li><a href="http://www.uxmatters.com/mt/archives/2014/07/design-for-kids-digital-products-for-playing-and-learning.php/" target="_blank">Design for Kids: Digital Products for Playing and Learning</a></li>
+                    <li><a href="http://rosenfeldmedia.com/books/design-for-kids/" target="_blank">Design for Kids: Digital Products for Playing and Learning-book</a></li>  
+                    <li><a href="http://www.xn--elcerebrodelnio-crb.com/libro.html" target="_blank">El cerebro del niño explicado a los padres</a></li>       
+                    <li><a href="https://www.smashingmagazine.com/2016/01/designing-apps-for-kids-is-not-childs-play/" target="_blank">Designing for Kids Is Not Child’s Play</a></li>           
+                    <li><a href="https://www.commonsensemedia.org/lists/best-apps-for-kids-ages-5-8#/" target="_blank">Best Apps for Kids Ages 5-8</a></li>
+                    <li><a href="https://www.nngroup.com/articles/childrens-websites-usability-issues/" target="_blank">Children's Websites: Usability Issues in Designing for Kids</a></li>        
+                </ul>            
             </li>
             <li class="tab-content tab-content-last typography">
-                <div class="typography">
-                    <h3>8</h3>
-                    <p>Gjojojo theoretical physicist </p>
-                    <p class="text-right"><em>Find out more about Albert Einstein from <a href="http://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Wikipedia</a>.</em></p>   
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!--/ tabs -->
-</div>
-</body>
-</html>
+                <h3>Imágenes</h3>
+                <p>Selección de varias fotos que hemos ido haciendo como histórico de nuestro proyecto</p>
+
+                    <div id="carousel"> 
+                      <input checked type=radio name=slider id="slide1" />
+                      <input type=radio name=slider id="slide2" />
+                      <input type=radio name=slider id="slide3" />
+                      <input type=radio name=slider id="slide4" />
+                      <input type=radio name=slider id="slide5" />
+
+                      <div id="slides">
+                        <div id="overflow">
+                          <div class="inner">
+                         <article>
+                          <img src="http://csscience.com/responsiveslidercss3/CouldDragonByBjzaba.png" />
+                          </article>
+
+                          <article>
+                          <img src="http://csscience.com/responsiveslidercss3/MountainFortByBjzaba.png" />
+                          </article>
+
+                          <article>
+                         <img src="http://csscience.com/responsiveslidercss3/MountainOutpostByBjzaba.png" />
+                          </article>
+
+                          <article>
+                          <img src="http://csscience.com/responsiveslidercss3/CliffsByBjzaba.png" />
+                          </article>
+
+                          <article>
+                          <img src="http://csscience.com/responsiveslidercss3/HillFortByBjzaba.png" />
+                          </article>
+
+                      </div> <!-- .inner -->
+                  </div> <!-- #overflow -->
+              </div> <!-- #slides -->
+
+              <div id="active">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div> <!-- #active -->
+
+        </div> <!-- #carousel -->
+        <!--/ tabs -->
+    </body>
+    </html>
+
+    
