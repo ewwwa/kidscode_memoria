@@ -2,4 +2,17 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	line-height: 1.55;
+	text-rendering: optimizeLegibility;
+ 	width:100%;  
+    color: #404040;
+	        background: url("../img/back-f.svg");
+        //background: url("../img/back.svg");
+        background-attachment: fixed;
+        background-color: #33bb44;
+        @media only screen and (min-width: 720px) {
+        background: url("../img/back-f.svg");
+        //background: url("../img/back.svg");
+        background-attachment: fixed;
+        background-color:orange;
+    }
 }

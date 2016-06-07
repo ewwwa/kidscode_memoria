@@ -1,17 +1,15 @@
 
-
-
-@media only screen and (min-width: 320px) {
     .img_container {
     width: 200px;
     height: 200px;
-    background: url("../mostra-img.svg");
+    background: url("../img/mostra-img.svg");
+    background-position:50% 42%;
+    background-size: 260%;
     border: 5px solid #f2f2f2;
     border-radius: 100%;
     margin:auto;
     margin-bottom:20px;
 
-}
 }
 
 @media only screen and (min-width: 768px){
@@ -19,11 +17,6 @@
     float:left;
     width: 275px;
     height: 275px;
-    background: url("../img/mostra-img.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 5px solid #f2f2f2;
-    border-radius: 100%;
     margin-right:30px;
 
 }
