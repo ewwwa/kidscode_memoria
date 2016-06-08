@@ -3,16 +3,14 @@ html, body {
 	font-size: 1rem;
 	line-height: 1.55;
 	text-rendering: optimizeLegibility;
- 	width:100%;  
-    color: #404040;
-	        background: url("../img/back-f.svg");
-        //background: url("../img/back.svg");
+  width:100%;  
+  color: #404040;
+  background: url("../img/back-f.svg");
         background-attachment: fixed;
-        background-color: #33bb44;
+        background-color:#32abec;
         @media only screen and (min-width: 720px) {
-        background: url("../img/back-f.svg");
-        //background: url("../img/back.svg");
+            background: url("../img/back-f.svg");
         background-attachment: fixed;
-        background-color:orange;
+        background-color:#0097e8;
     }
 }
