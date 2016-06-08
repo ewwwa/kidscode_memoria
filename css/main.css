@@ -2,7 +2,18 @@
 html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  line-height: 1.55; }
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  color: #404040;
+  background: url("../img/back-f.svg");
+  background-attachment: fixed;
+  background-color: #33bb44; }
+  @media only screen and (min-width: 720px) {
+    html, body {
+      background: url("../img/back-f.svg");
+      background-attachment: fixed;
+      background-color: orange; } }
 
 h1 {
   padding: 40px 0 20px;
@@ -73,7 +84,7 @@ h1 {
   position: absolute;
   width: 100%;
   overflow: auto;
-  padding: 10px 30px 30px;
+  padding: 10px 30px;
   /*margen interior div*/
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -120,13 +131,13 @@ h1 {
   list-type: none; }
 
 .pcss3t > label:hover {
-  background: #ed497e; }
+  background: #33bb44; }
 
 .pcss3t > input:checked + label {
-  background: #ed497e; }
+  background: #33bb44; }
 
 .pcss3t > ul {
-  border: 10px #0097e8 solid;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.2);
   text-align: left; }
 
 /*ESTILOS DE TAG colores*/
@@ -151,8 +162,7 @@ h1 {
 .pcss3t-theme-5 > label:hover,
 .pcss3t-theme-6 > label:hover,
 .pcss3t-theme-7 > label:hover {
-  background: #ed497e;
-  opacity: 1; }
+  background: #33bb44; }
 
 .pcss3t-theme-1 > input:checked + label,
 .pcss3t-theme-2 > input:checked + label,
@@ -165,8 +175,7 @@ h1 {
   padding-bottom: 5px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  color: white;
-  opacity: 1; }
+  color: white; }
 
 .pcss3t-theme-1 > ul,
 .pcss3t-theme-2 > ul,
@@ -222,7 +231,8 @@ h1 {
   overflow: hidden;
   outline: none;
   font-size: 1rem;
-  color: #808080; }
+  color: #808080;
+  background-color: white; }
 
 /*.two-columns {
     -webkit-column-count: 2;
@@ -233,28 +243,24 @@ h1 {
 /* DIV SIZE */
 .pcss3t > ul,
 .pcss3t > ul > li {
-  height: 600px; }
+  height: 500px; }
 
-@media only screen and (min-width: 320px) {
-  .img_container {
-    width: 200px;
-    height: 200px;
-    background: url("../mostra-img.svg");
-    border: 5px solid #f2f2f2;
-    border-radius: 100%;
-    margin: auto;
-    margin-bottom: 20px; } }
+.img_container {
+  width: 200px;
+  height: 200px;
+  background: url("../img/mostra-img.svg");
+  background-position: 50% 42%;
+  background-size: 260%;
+  border: 5px solid #f2f2f2;
+  border-radius: 100%;
+  margin: auto;
+  margin-bottom: 20px; }
 
 @media only screen and (min-width: 768px) {
   .img_container {
     float: left;
     width: 275px;
     height: 275px;
-    background: url("../img/mostra-img.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 5px solid #f2f2f2;
-    border-radius: 100%;
     margin-right: 30px; } }
 
 #carousel {
